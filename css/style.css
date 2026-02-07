@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: azure;
+}
+
+main {
+    font-size: 16px;
+}
+
+header {
+    background-color: maroon;
+    padding: 10px;
+}
+
+p {
+    width: 70%;
+    line-height: 130%;
+}
+
+img {
+    width: 15%;
+}
+
+nav a {
+    color: azure;
+}
+
+footer {
+    background-color: lightgray;
+}
