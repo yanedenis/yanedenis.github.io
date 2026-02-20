@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/script.js" defer></script>
     <title>Silvia</title>
 </head>
 
@@ -18,12 +18,14 @@
         </nav>
     </header>
     <main>
-        <h1 class="main-title">Nissan Silvia</h1>
-        <p class="main-description">The Nissan Silvia (Japanese: 日産・シルビア, Hepburn: Nissan Shirubia) is the series of small sports cars produced
-            by Nissan. Versions of the Silvia have been marketed as the 200SX or 240SX for export, with some export
-            versions being sold under the Datsun brand.</p>
+        <section class="main-content">
+            <h1 class="main-title">Nissan Silvia</h1>
+            <p class="main-description">The Nissan Silvia (Japanese: 日産・シルビア, Hepburn: Nissan Shirubia) is the series of small sports cars produced
+                by Nissan. Versions of the Silvia have been marketed as the 200SX or 240SX for export, with some export
+                versions being sold under the Datsun brand.</p>
+        </section>
         <section class="cards">
-            <a class="card" href="https://en.wikipedia.org/wiki/Nissan_Silvia#S13" target="_blank">
+            <a class="card" href="https://en.wikipedia.org/wiki/Nissan_Silvia#S13" target="_blank" onmouseover="upDate(this)" onmouseout="upDo()">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/1988_Nissan_Silvia_Q%27s.jpg/2560px-1988_Nissan_Silvia_Q%27s.jpg"
                     alt="SilviaS13">
                 <div class="card-description">
@@ -33,7 +35,7 @@
                     <p class="card-info">The S13 Silvia was introduced in mid-1988. Upon its introduction in Japan, it became immensely popular in that region and won the 1988 Car of the Year Japan Award. Nissan replaced the Gazelle with the 180SX, which served as the junior companion to the Fairlady ZX at Nissan Bluebird Store Japanese dealerships. As before, the Silvia was exclusive to Japanese dealerships called Nissan Prince Store next to the Skyline.</p>
                 </div>
             </a>
-            <a class="card" href="https://en.wikipedia.org/wiki/Nissan_Silvia#S14" target="_blank">
+            <a class="card" href="https://en.wikipedia.org/wiki/Nissan_Silvia#S14" target="_blank" onmouseover="upDate(this)" onmouseout="upDo()">
                 <img src="https://justschassis.com/wp-content/uploads/2023/03/1994-nissan-s14-1024x681.jpg"
                     alt="SilviaS14">
                 <div class="card-description">
@@ -43,7 +45,7 @@
                     <p class="card-info">The S14 Silvia debuted in Japan towards the end of 1993. It was lower and wider than the S13. New rounded styling contributed to the illusion of a greater increase in size than actually occurred. Wheelbase and track were both increased, leading to slightly improved handling. Unlike export markets, where sales of the S14 chassis variants faltered, the Silvia remained popular in Japan. However, the width dimension exceeded 1,700 mm (67 in), which pushed this generation out of the compact class tax bracket and made Japanese buyers liable for higher road taxes. Sales of the S14 also faltered because specialty car buyers at the time were moving to RVs and SUVs. The fastback and convertible bodystyles were discontinued internationally, leaving only the coupé in production.</p>
                 </div>
             </a>
-            <a class="card" href="https://en.wikipedia.org/wiki/Nissan_Silvia#S15" target="_blank">
+            <a class="card" href="https://en.wikipedia.org/wiki/Nissan_Silvia#S15" target="_blank" onmouseover="upDate(this)" onmouseout="upDo()">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/The_frontview_of_Nissan_Silvia_spec_S_%28S15%29_%28cropped%29.JPG"
                     alt="SilviaS15">
                     <div class="card-description">
@@ -54,6 +56,9 @@
                 </div>
             </a>
         </section>
+        <div class="selected-car" id="selectedCar">
+            <p>No car selected</p>
+        </div>
     </main>
 </body>
 

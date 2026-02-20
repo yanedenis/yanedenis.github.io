@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
     <title>Skyline</title>
 </head>
 
@@ -25,7 +26,7 @@
                 dealership sales channels called Nissan Prince Shop.</p>
         </section>
         <section class="cards">
-            <a class="card" href="https://en.wikipedia.org/wiki/Nissan_Skyline#R30" target="_blank">
+            <a class="card" href="https://en.wikipedia.org/wiki/Nissan_Skyline#R30" target="_blank" onmouseover="upDate(this)" onmouseout="upDo()">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/R30_hatch_front_side.jpg" alt="NissanR30">
                 <div class="card-description">
                     <h2 class="card-title">
@@ -34,7 +35,7 @@
                     <p class="card-info">The names were brought into line with the home Japanese and worldwide markets with the launch of the R30 series in August 1981, which was built on a C31 Laurel platform. Unlike preceding generations, four- and six-cylinder versions now shared a front end of the same length. The R30 was available as a two-door hardtop coupé, a four-door sedan, a five-door Liftback (available only in the R30 generation), or a four-door station wagon. In all, there were 26 variations of the R30 Skyline available.</p>
                 </div>
             </a>
-            <a class="card" href="https://en.wikipedia.org/wiki/Nissan_Skyline#R31" target="_blank">
+            <a class="card" href="https://en.wikipedia.org/wiki/Nissan_Skyline#R31" target="_blank" onmouseover="upDate(this)" onmouseout="upDo()">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Nissan_Skyline_R31_2000_GTS-R_002.jpg"
                     alt="NissanR31">
                 <div class="card-description">
@@ -44,7 +45,7 @@
                     <p class="card-info">The R31 Skyline of 1985 was a natural evolution on the R30 shape, and also this one was loosely based on the Laurel platform (C32). The design was slightly larger and squarer than previous Skylines. It was available as a Sedan, Hardtop sedan, Coupé and station wagon. Affectionately known as the "Seventhsu" or simply "7th Sukairain" by owners, due to it being the 7th-generation Skyline.</p>
                 </div>
             </a>
-            <a class="card" href="https://en.wikipedia.org/wiki/Nissan_Skyline#R32" target="_blank">
+            <a class="card" href="https://en.wikipedia.org/wiki/Nissan_Skyline#R32" target="_blank" onmouseover="upDate(this)" onmouseout="upDo()">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Nissan_Skyline_R32_GT-R_001.jpg"
                     alt="NissanR32">
                 <div class="card-description">
@@ -54,7 +55,7 @@
                     <p class="card-info">The R32 Skyline debuted in 1989. It was available as either a 2-door coupe or 4-door hardtop sedan, all other bodystyles were dropped. The R32 featured several versions of the RB-series straight-6 engines, which had improved heads (the twelve port inlet was gone) and used the ECCS (Electronically Concentrated Control System) injection system. Also available was an 1,800 cc 4-cylinder GXi model. Most models had HICAS four-wheel steering, with the rear wheels being hydraulically linked to the front steering. The 2.5-liter GTS-25 became one of the first Japanese production cars to feature a 5-speed automatic transmission. The GTS-t came in standard and Type M configurations, with the Type M having larger five-stud 16-inch wheels, four piston front calipers and twin piston rears plus other minor differences. ABS was optional (except for the GT-R and GTS-4), mechanical LSD was standard on the GT-R and viscous LSD was standard on all turbo models and optional on all but the GXi. Nissan also produced 100 Australian models of the R32. In addition, there was a 4WD version of the GTS-t Type M, called the GTS-4.</p>
                 </div>
             </a>
-            <a class="card" href="https://en.wikipedia.org/wiki/Nissan_Skyline#R33" target="_blank">
+            <a class="card" href="https://en.wikipedia.org/wiki/Nissan_Skyline#R33" target="_blank" onmouseover="upDate(this)" onmouseout="upDo()">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Nissan_Skyline_R33_GT-R_001.jpg"
                     alt="NissanR33">
                 <div class="card-description">
@@ -64,7 +65,7 @@
                     <p class="card-info">The R33 Skyline was introduced in August 1993. Slightly heavier than the R32, it was again available in coupé and sedan body configurations. The R33 was the safest of the models with a rating of 3.8 out of 5.5 accordingly; the airbag system and internal crash bars made this vehicle significantly safer than previous models. All models now used a six-cylinder engine. Nissan took the unusual step of down-grading the GTS model to have only the RB20E, this was mated to either a 5 speed manual or an optional 5 speed automatic. The twin-cam unit of the R32 GTS was discontinued and so was the 2.0 L turbo RB20DET from the GTS-t, this was replaced with the GTS-25t which was equipped with the larger RB25DET and mated to either a 5 speed manual or an optional 4 speed automatic, the 5 speed auto was not used as it wasn't strong enough for the extra power. HICAS was standard in all GTS-25t sub-models except the Type G.</p>
                 </div>
             </a>
-            <a class="card" href="https://en.wikipedia.org/wiki/Nissan_Skyline#R34" target="_blank">
+            <a class="card" href="https://en.wikipedia.org/wiki/Nissan_Skyline#R34" target="_blank" onmouseover="upDate(this)" onmouseout="upDo()">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Nissan_Skyline_R34_a.jpg" alt="NissanR34">
                 <div class="card-description">
                     <h2 class="card-title">
@@ -74,6 +75,9 @@
                 </div>
             </a>
         </section>
+        <div class="selected-car" id="selectedCar">
+            <p>No car selected</p>
+        </div>
     </main>
 </body>
 
